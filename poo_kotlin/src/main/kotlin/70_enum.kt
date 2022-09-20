@@ -1,0 +1,68 @@
+
+// Enum -> Vem de Enumerador
+// Tem como objetivo limitar o intervalo de valores
+
+enum class Prioridade(val value: Int) {
+    Baixa(1) {
+        override fun toString(): String {
+            return "Prioridade Baixa $value"
+        }
+    },
+    Media(5){
+        override fun toString(): String {
+            return "Prioridade Media $value"
+        }
+    },
+
+    Alta(15) {
+        override fun toString(): String {
+            return "Prioridade Alta $value"
+        }
+    }
+}
+
+fun main() {
+    for (index in Prioridade.values()){
+//        if(index == Prioridade.Media)
+        println(index)
+    }
+}
+
+// __________________________________________________________________________
+
+/*import java.time.Month
+import java.util.**/
+
+/**
+ * Classes enum permitem a definição de uma lista de valores dentro da classe.
+ * Útil quando é necessário transitar um intervalo de valores conhecidos,
+ * pois restringe as possibilidades e os erros.
+ */
+/*
+fun main() {
+
+    // Por exemplo, uma classe que contenha os meses do ano.
+    // Ou uma classe que tenha os dias da semana
+
+    // Percorre a lista de valores
+    for (p in PRIORIDADE.values()) {
+        println(p)
+    }
+
+    // Valor associado a prioridade
+    println(PRIORIDADE2.ALTA.id)
+
+}
+
+enum class PRIORIDADE {
+    BAIXA {
+        override fun toString(): String {
+            return "Essa prioridade é baixa."
+        }
+    },
+    MEDIA, ALTA
+}
+
+enum class PRIORIDADE2(val id: Int) {
+    BAIXA(1), MEDIA(5), ALTA(10)
+}*/
