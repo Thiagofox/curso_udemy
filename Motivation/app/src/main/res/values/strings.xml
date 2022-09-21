@@ -12,4 +12,5 @@
 
     <string name="validation_mandatory_name">Informe seu nome.</string>
     <string name="whats_your_name"><font size="20">Qual seu nome?</font></string>
+    <string name="ola_kotlin">Olá Kotlin!</string>
 </resources>

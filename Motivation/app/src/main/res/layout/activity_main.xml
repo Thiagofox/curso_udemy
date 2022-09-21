@@ -12,22 +12,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/purple"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:paddingTop="1dp"
-        android:paddingBottom="10dp">
+        android:padding="8dp">
 
         <ImageView
-            android:id="@+id/image_infinity"
+            android:id="@+id/image_all"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_infinity"
-            app:tint="@color/white" />
+            android:src="@drawable/ic_infinity" />
 
 
         <ImageView
-            android:id="@+id/image_smile"
+            android:id="@+id/image_happy"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -35,7 +31,7 @@
 
 
         <ImageView
-            android:id="@+id/image_sum"
+            android:id="@+id/image_sunny"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -52,7 +48,7 @@
         android:layout_below="@+id/linear_menu"
         android:gravity="center"
         android:padding="16dp"
-        android:text="Olá Kotlin!"
+        android:text="@string/ola_kotlin"
         android:textSize="16sp"
         android:textStyle="bold" />
 
